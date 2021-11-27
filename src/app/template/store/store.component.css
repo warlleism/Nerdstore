@@ -1,15 +1,15 @@
 .header-container {
     width: 100%;
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     margin: 0;
     background-color: #1a1b20;
 }
 
 .header-container h2 {
+    margin-top: 20px;
     font-size: 1.6rem;
     color: #dd3657;
 }
@@ -31,6 +31,7 @@
 }
 
 .header-container p {
+    margin-top: 20px;
     color: #dd3657;
     margin-left: 20px;
 }
@@ -50,7 +51,6 @@
     justify-content: center;
     width: 100%;
     margin: 0;
-    padding: 10px;
     background-color: #2b2d35;
     height: 28px;
 }
@@ -62,7 +62,7 @@
 }
 
 .header-nav ul li {
-    margin: 0px 10px 0px 10px;
+    margin: 3px 10px 0px 10px;
     color: rgb(135, 135, 150);
     font-size: 0.7rem;
 }
@@ -73,44 +73,57 @@
 }
 
 .bf-img {
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .bf-img img {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-layout {
     display: flex;
     justify-content: center;
-    background-color: #2b2d35c9;
-    max-width: 600px;
-    border-radius: 6px;
     margin: 0 auto;
     margin-top: 30px;
+    width: 900px;
+    height: 45px;
+    background-color: #272830;
+    border-radius: 6px;
 }
 
-.flex-layout div {
+.flex-layout ul {
     display: flex;
-    justify-content: center;
-    padding: 2px 10px 2px 10px;
+    flex-direction: row;
 }
 
-.flex-layout div span {
-    color: rgb(146, 146, 169);
-    margin-top: 8px;
-    font-size: 1.6rem;
-}
-
-.flex-layout div p {
-    width: 50px;
-    color: rgb(146, 146, 169);
+.flex-layout ul li {
+    color: #797d8c;
+    list-style: none;
+    margin-left: 20px;
     font-size: 0.6rem;
 }
 
+.flex-layout span {
+    vertical-align: middle;
+    color: #797d8c;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+.promo-title {
+    color: #797d8c;
+    margin-top: 80px;
+    margin-right: 600px;
+    justify-content: end;
+    font-weight: 800;
 }
 
 .grid-container {
@@ -118,7 +131,7 @@ body {
     justify-content: center;
     grid-template-columns: 450px 400px;
     grid-template-rows: 500px;
-    margin-top: 100px;
+    margin-right: 36px;
 }
 
 .grid-container .promo1 {
@@ -135,4 +148,47 @@ body {
     margin-top: 10px;
     width: 440px;
     border-radius: 10px;
+}
+
+.gift-promo img {
+    max-width: 895px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+.gift2 {
+    margin-top: 20px;
+}
+
+.promo-title-2 {
+    color: #797d8c;
+    margin-top: 80px;
+    margin-right: 330px;
+    font-weight: 800;
+}
+
+.geek-books-promo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.geek-books-promo div {
+    margin-left: 15px;
+}
+
+.geek-books-promo img {
+    border-radius: 8px;
+    max-width: 290px;
+}
+
+.promo-title-3 {
+    color: #797d8c;
+    margin-top: 80px;
+    margin-right: 445px;
+    font-weight: 800;
+}
+
+.price-range img {
+    max-width: 217px;
 }
