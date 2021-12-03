@@ -226,6 +226,7 @@ body {
     }
     .gift-promo img {
         max-width: 100%;
+        margin: 0;
     }
     .geek-books-promo {
         display: flex;
@@ -286,6 +287,19 @@ body {
         }
         .flex-layout {
             display: none;
+        }
+        .promo-title {
+            font-size: 15px;
+        }
+        .promo-title-2 {
+            font-size: 15px;
+        }
+        .promo-title-3 {
+            font-size: 15px;
+        }
+        .gift-promo img {
+            max-width: 100%;
+            margin: 0;
         }
     }
 }
