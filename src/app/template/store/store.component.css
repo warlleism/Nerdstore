@@ -8,6 +8,11 @@
     background-color: #1a1b20;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(135, 135, 150);
+}
+
 .header-container h2 {
     margin-top: 20px;
     font-size: 1.6rem;
@@ -63,7 +68,6 @@
 
 .header-nav ul li {
     margin: 3px 10px 0px 10px;
-    color: rgb(135, 135, 150);
     font-size: 0.7rem;
 }
 
@@ -75,10 +79,11 @@
 .bf-img {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
 }
 
 .bf-img img {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -151,7 +156,7 @@ body {
 }
 
 .gift-promo img {
-    max-width: 895px;
+    width: 895px;
     border-radius: 7px;
     margin-left: 5px;
 }
@@ -179,7 +184,7 @@ body {
 
 .geek-books-promo img {
     border-radius: 8px;
-    max-width: 290px;
+    width: 290px;
 }
 
 .promo-title-3 {
@@ -190,5 +195,97 @@ body {
 }
 
 .price-range img {
-    max-width: 217px;
+    width: 217px;
+}
+
+@media screen and ( max-width: 929px) {
+    .header-nav {
+        display: none;
+    }
+    .flex-layout {
+        margin-top: 0px;
+        width: 100%;
+        height: 300px;
+        border-radius: 0px;
+    }
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid-container {
+        margin-left: 27px;
+    }
+    .grid-container .promo1 {
+        max-width: 100%;
+    }
+    .grid-container .promo2 {
+        max-width: 100%;
+    }
+    .grid-container .promo3 {
+        max-width: 100%;
+    }
+    .gift-promo img {
+        max-width: 100%;
+    }
+    .geek-books-promo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .geek-books-promo img {
+        max-width: 100%;
+    }
+    .promo-title {
+        color: #797d8c;
+        margin-top: 80px;
+        margin-right: 0px;
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+    .promo-title-2 {
+        font-size: 1.2rem;
+        color: #797d8c;
+        margin-top: 20px;
+        margin-right: 0px;
+        font-weight: 800;
+    }
+    .promo-title-3 {
+        font-size: 1.2rem;
+        color: #797d8c;
+        margin-top: 20px;
+        margin-right: 0px;
+        font-weight: 800;
+    }
+    @media screen and (max-width: 441px) {
+        .header-container {
+            height: 100px;
+        }
+        .header-container h2 {
+            margin-top: 0px;
+            font-size: 20px;
+        }
+        .header-container h2>span {
+            vertical-align: bottom;
+            margin: 0;
+            padding: 0;
+        }
+        .header-container input {
+            position: absolute;
+            top: 60px;
+            width: 200px;
+        }
+        .header-container p {
+            margin-bottom: 36px;
+            font-size: 19px;
+            margin-top: 20px;
+            color: #dd3657;
+            margin-left: 20px;
+        }
+        .header-container span {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .flex-layout {
+            display: none;
+        }
+    }
 }
