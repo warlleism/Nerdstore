@@ -199,6 +199,9 @@ body {
 }
 
 @media screen and ( max-width: 929px) {
+    .bf-img {
+        display: none;
+    }
     .header-nav {
         display: none;
     }
@@ -213,7 +216,8 @@ body {
         flex-wrap: wrap;
     }
     .grid-container {
-        margin-left: 27px;
+        margin: 0 auto;
+        width: 325px;
     }
     .grid-container .promo1 {
         max-width: 100%;
@@ -237,7 +241,7 @@ body {
     }
     .promo-title {
         color: #797d8c;
-        margin-top: 80px;
+        margin-top: 20px;
         margin-right: 0px;
         font-weight: 800;
         font-size: 1.2rem;
